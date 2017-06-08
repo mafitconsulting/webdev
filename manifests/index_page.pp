@@ -1,4 +1,4 @@
-define webdev::index_page 
+define webdev::index_page(
   String $content,
 ) {
   file { 'create_index_file':
