@@ -1,8 +1,8 @@
 define webdev::index_page(
   String $content,
-  String $name,
+  String $filename,
 ) {
-  file { "${name}":
+  file { "${filename}":
     ensure  => file,
     group   => 'root',
     mode    => '0644',
