@@ -8,7 +8,4 @@ define webdev::index_page(
     mode    => '0644',
     content => $content,
   }
-  user { "${username}":
-    ensure => present,
- 
 }
