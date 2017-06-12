@@ -6,7 +6,7 @@ define webdev::create_users(
 ) {
   user { "${username}":
     ensure     => present,
-    group      => $groups,
+    groups      => $groups,
     gid        => $gid,
     uid        => $uid,
     managehome => true,
