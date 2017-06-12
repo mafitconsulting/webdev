@@ -6,9 +6,13 @@ define webdev::create_users(
   String $uid,
 ) {
   user { "${username}":
+    ensure     => present,
     group      => $groups,
     gid        => $gid,
     uid        => $uid,
+    managehome => true,
+    shell      => '/bin/bash',
+
   }
 }
 
